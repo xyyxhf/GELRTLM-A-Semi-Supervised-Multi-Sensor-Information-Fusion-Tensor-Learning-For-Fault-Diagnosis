@@ -1,7 +1,7 @@
 
 import numpy as np
 from scipy.optimize import minimize
-class SGELRTM_ADMM:
+class GELRTM_ADMM:
     def __init__(self, Xl, Xu, y, xlnum, L, tau, lambda_, max_iter=100, eps=1e-8, rho=0.01, eta=0.999):
         super().__init__()  
         self.Xl = Xl
