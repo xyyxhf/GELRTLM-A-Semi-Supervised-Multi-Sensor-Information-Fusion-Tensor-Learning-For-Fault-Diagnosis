@@ -35,8 +35,7 @@ class GELRTM_ADMM:
         coeff1 = (self.rho + 1) * sqrtc - 2 * c
         coeff2 = self.lambda_ * sqrtc
 
-        H = (coeff1 * (Xl @ Xl.T * (self.y[:, np.newaxis] @ self.y[np.newaxis, :]))) + \
-            (coeff2 * ((Xl @ XminusX.T) @ (Xl @ XminusX.T) * (self.y[:, np.newaxis] @ self.y[np.newaxis, :])))
+        H = (coeff1 * (Xl @ Xl.T * (self.y[:, np.newaxis] @ self.y[np.newaxis, :]))) + (coeff2 * ((Xl @ XminusX.T) @ (Xl @ XminusX.T) * (self.y[:, np.newaxis] @ self.y[np.newaxis, :])))
         
         s_km1 = np.zeros(m * n * l)
         s_hatk = s_km1.copy()
