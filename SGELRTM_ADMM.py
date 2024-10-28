@@ -1,9 +1,13 @@
+
+import numpy as np
+from scipy.optimize import minimize
 class SGELRTM_ADMM:
-    def __init__(self, Xl, Xu, y, labelednum, L, tau, lambda_, max_iter=6, eps=1e-8, rho=0.01, eta=0.999):
+    def __init__(self, Xl, Xu, y, xlnum, L, tau, lambda_, max_iter=100, eps=1e-8, rho=0.01, eta=0.999):
+        super().__init__()  
         self.Xl = Xl
         self.Xu = Xu
         self.y = y
-        self.labelednum = labelednum
+        self.labelednum = xlnum
         self.L = L
         self.tau = tau
         self.lambda_ = lambda_
@@ -16,8 +20,7 @@ class SGELRTM_ADMM:
         self.W_iter = []
         self.b = None
         self.obj_recent = []
-
-    def fit(self):
+    def ADMM_fit(self):
         m, n, l, totalnum = self.Xu.shape
         X = self.Xu.reshape(-1, totalnum).T
         Xl = self.Xl.reshape(-1, 2 * self.labelednum).T
@@ -66,7 +69,7 @@ class SGELRTM_ADMM:
             W_k = w_k.reshape(m, n, l)
             Lambda_k = lambda_hatk.reshape(m, n, l)
 
-            S, nuc_sumvalue = self.prox_tnn(self.rho * W_k - Lambda_k, self.tau)
+            S, nuc_sumvalue = prox_tnn(self.rho * W_k - Lambda_k, self.tau)
             s_k = (S / self.rho).flatten()
 
             lambda_k = lambda_hatk - self.rho * (w_k - s_k)
@@ -96,7 +99,7 @@ class SGELRTM_ADMM:
             lambda_km1 = lambda_k
             t_k = t_kp1
 
-            obj_k = self.obj_value(w_k, self.b, Xl, XminusX, self.y, nuc_sumvalue, self.tau, self.lambda_)
+            obj_k = obj_value(w_k, self.b, Xl, XminusX, self.y, nuc_sumvalue, self.tau, self.lambda_)
             recent_idx += 1
             self.obj_recent[recent_idx] = obj_k
             if recent_idx == recent_number:
@@ -108,16 +111,6 @@ class SGELRTM_ADMM:
             
             if (abs(obj_k - np.mean(self.obj_recent)) / abs(np.mean(self.obj_recent)) < self.eps and k > recent_number):
                 break
-
         print(f'stop_iter {k}')
 
-    def prox_tnn(self, X, tau):
-        # Implement the proximal operator for the nuclear norm
-        U, s, Vh = svd(X, full_matrices=False)
-        s_thresholded = np.maximum(s - tau, 0)
-        return U @ np.diag(s_thresholded) @ Vh, np.sum(s_thresholded)
 
-    def obj_value(self, w, b, Xl, XminusX, y, nuc_sumvalue, tau, lambda_):
-        # Implement the objective value calculation
-        # This is a placeholder and needs the actual implementation
-        return np.random.random()  # Replace with actual computation
