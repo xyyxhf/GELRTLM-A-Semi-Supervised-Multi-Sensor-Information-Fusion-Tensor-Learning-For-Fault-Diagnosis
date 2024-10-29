@@ -1,5 +1,5 @@
 # GELRTLM-A-Semi-Supervised-Multi-Sensor-Information-Fusion-Tensor-Learning-For-Fault-Diagnosis
-This is the code for the paper entitled "Semi-supervised multi-sensor information fusion tailored graph embedded low-rank tensor learning machine under extremely low labeled rate" [[paper source]](https://doi.org/10.1016/j.inffus.2023.102222), published in the Information Fusion,  January 2024.<br>
+This is the code for the paper entitled [Semi-supervised multi-sensor information fusion tailored graph embedded low-rank tensor learning machine under extremely low labeled rate](https://doi.org/10.1016/j.inffus.2023.102222), published in the Information Fusion,  January 2024.<br>
 First Author: Haifeng Xu.<br>
 Organization: Department of Mechanical Engineering, Tsinghua University, Beijing, 100084, China;<br>
 School of Mechanical Engineering, Anhui University of Technology, Ma’anshan, 243032, China.
