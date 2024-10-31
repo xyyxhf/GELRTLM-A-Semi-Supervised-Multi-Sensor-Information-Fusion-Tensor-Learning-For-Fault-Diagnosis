@@ -5,7 +5,7 @@ Organization: Department of Mechanical Engineering, Tsinghua University, Beijing
 School of Mechanical Engineering, Anhui University of Technology, Ma’anshan, 243032, China.
 
 # Citation
-For further introductions to semi-supervised tensor learning and information fusion in bearing fault diagnosis, please read our [paper](https://doi.org/10.1016/j.inffus.2023.102222). And if you find this repository useful and use it in your works, please cite our paper, thank you~:  <br>
+For further introductions to semi-supervised tensor learning and information fusion in bearing fault diagnosis, please read our [paper](https://doi.org/10.1016/j.inffus.2023.102222). And if you find this repository useful and use it in your works, please cite our paper, thank you sosososososo much.  <br>
 
 @article{XU2024102222,<br>
 author = {Haifeng Xu and Xu Wang and Jinfeng Huang and Feibin Zhang and Fulei Chu},<br>
