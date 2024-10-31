@@ -6,11 +6,12 @@ Organization: Department of Mechanical Engineering, Tsinghua University, Beijing
 School of Mechanical Engineering, Anhui University of Technology, Ma’anshan, 243032, China.
 
 ## Artical Information
-1. [Dataset](https://github.com/yyxyz/CaseWesternReserveUniversityData.git)：Case Western Reserve University Roller Bearing Fault Dataset, which are processed to tensor format<br>
+### 1. [Dataset](https://github.com/yyxyz/CaseWesternReserveUniversityData.git)：
+   Case Western Reserve University Roller Bearing Fault Dataset, which are processed to tensor format.<br>
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/multi-sensor%20fusion%20feature.jpg)
-3. Proposed diagnosis framework:<br>
+### 2. Proposed diagnosis framework:
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/Flow%20diagram.jpg)
-4. Results:
+### 3. Results:
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/experimental%20result.jpg)
 
 ## Citation
