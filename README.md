@@ -19,7 +19,7 @@ For further introductions to semi-supervised tensor learning and information fus
 And if you find this repository useful and use it in your works, please cite our paper, thank you sosososososo much.  <br>
 
 ```
-@article{XU2024102222,<br>
+@article{XU2024102222,
 author = {Haifeng Xu and Xu Wang and Jinfeng Huang and Feibin Zhang and Fulei Chu},
 title = {Semi-supervised multi-sensor information fusion tailored graph embedded low-rank tensor learning machine under extremely low labeled rate},
 journal = {Information Fusion},
