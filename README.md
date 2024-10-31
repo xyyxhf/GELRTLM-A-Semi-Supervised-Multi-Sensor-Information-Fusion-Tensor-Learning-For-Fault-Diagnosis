@@ -23,6 +23,5 @@ abstract = {This paper investigates a demanding and meaningful task of intellige
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/multi-sensor%20fusion%20feature.jpg)
 3. Proposed diagnosis framework:<br>
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/Flow%20diagram.jpg)
-   experimental result.jpg
 4. Results:
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/experimental%20result.jpg)
