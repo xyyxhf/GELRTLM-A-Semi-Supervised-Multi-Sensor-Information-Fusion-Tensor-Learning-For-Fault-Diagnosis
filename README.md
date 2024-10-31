@@ -1,12 +1,12 @@
 # GELRTLM-A-Semi-Supervised-Multi-Sensor-Information-Fusion-Tensor-Learning-For-Fault-Diagnosis
 ## Introduction
-This is the code for the paper entitled "[Semi-supervised multi-sensor information fusion tailored graph embedded low-rank tensor learning machine under extremely low labeled rate](https://doi.org/10.1016/j.inffus.2023.102222)", published in the `Information Fusion`,  January 2024.<br>
+This is the code for the [paper](https://doi.org/10.1016/j.inffus.2023.102222) entitled "Semi-supervised multi-sensor information fusion tailored graph embedded low-rank tensor learning machine under extremely low labeled rate", published in the `Information Fusion`,  January 2024.<br>
 First Author: `Haifeng Xu`<br>
 Organization: Department of Mechanical Engineering, Tsinghua University, Beijing, 100084, China;<br>
 School of Mechanical Engineering, Anhui University of Technology, Ma’anshan, 243032, China.
 
 ## Artical Information
-1. Data：[Case Western Reserve University Roller Bearing Fault Dataset](https://github.com/yyxyz/CaseWesternReserveUniversityData.git), which are processed to tensor format<br>
+1. [Dataset](https://github.com/yyxyz/CaseWesternReserveUniversityData.git)：Case Western Reserve University Roller Bearing Fault Dataset, which are processed to tensor format<br>
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/multi-sensor%20fusion%20feature.jpg)
 3. Proposed diagnosis framework:<br>
    ![](https://github.com/xyyxhf/GELRTLM-A-Semisupervised-Tensor-Learning-Algorithm/blob/main/Flow%20diagram.jpg)
