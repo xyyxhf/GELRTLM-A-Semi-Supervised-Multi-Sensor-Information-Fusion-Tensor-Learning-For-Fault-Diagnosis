@@ -20,13 +20,13 @@ And if you find this repository useful and use it in your works, please cite our
 
 ```
 @article{XU2024102222,<br>
-author = {Haifeng Xu and Xu Wang and Jinfeng Huang and Feibin Zhang and Fulei Chu},<br>
-title = {Semi-supervised multi-sensor information fusion tailored graph embedded low-rank tensor learning machine under extremely low labeled rate},<br>
-journal = {Information Fusion},<br>
-volume = {105},<br>
-pages = {102222},<br>
-year = {2024},<br>
-issn = {1566-2535},<br>
+author = {Haifeng Xu and Xu Wang and Jinfeng Huang and Feibin Zhang and Fulei Chu},
+title = {Semi-supervised multi-sensor information fusion tailored graph embedded low-rank tensor learning machine under extremely low labeled rate},
+journal = {Information Fusion},
+volume = {105},
+pages = {102222},
+year = {2024},
+issn = {1566-2535},
 doi = {10.1016/j.inffus.2023.102222}
 }
 ```
